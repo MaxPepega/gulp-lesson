@@ -1,0 +1,21 @@
+block variables
+
+doctype html 
+html(lang="ru-RU")
+  head
+    meta(charset="utf-8")
+    title #{title}
+    <!-- [if IE]>
+    meta(http-equiv='X-UA-Compatible', content='IE = edge')
+    <!--[endif]-->
+    meta(name="vieport" content="width=device-width,initial-scale=1")
+    meta(name="keywords" content="")
+    link(rel="stylesheet" type="text/css" href="static/css/style.css")
+  body
+    .wrapper
+      //includes ../modules/header/headers
+      .content 
+        block content
+      //includes ../modules/footer/footer
+    script(src="static/js/main.js")
+    block script
